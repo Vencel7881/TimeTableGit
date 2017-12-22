@@ -1,0 +1,107 @@
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main.xml	(date 1513965943000)
++++ app/src/main/res/layout/activity_main.xml	(revision )
+@@ -11,5 +11,99 @@
+         android:layout_height="match_parent"
+         android:layout_margin="10dp">
+ 
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:orientation="vertical">
++
++            <TextView
++                android:id="@+id/MondayTextView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_alignParentTop="true"
++                android:layout_centerHorizontal="true"
++                android:layout_marginTop="72dp"
++                android:background="#2ad110"
++                android:fadingEdge="horizontal|vertical"
++                android:onClick="ShowLesson"
++                android:paddingBottom="15dp"
++                android:paddingStart="10dp"
++                android:paddingTop="15dp"
++                android:tag="0"
++                android:text="Monday"
++                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++                android:textSize="35sp" />
++
++            <TextView
++                android:id="@+id/TuesdayTextView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_alignLeft="@+id/MondayTextView"
++                android:layout_alignStart="@+id/MondayTextView"
++                android:layout_below="@+id/MondayTextView"
++                android:background="#10aad1"
++                android:fadingEdge="horizontal|vertical"
++                android:onClick="ShowLesson"
++                android:paddingBottom="15dp"
++                android:paddingStart="10dp"
++                android:paddingTop="15dp"
++                android:tag="1"
++                android:text="Tuesday"
++                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++                android:textSize="35sp" />
++
++            <TextView
++                android:id="@+id/WednesdayTextView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_below="@+id/TuesdayTextView"
++                android:layout_centerHorizontal="true"
++                android:background="#e40e18"
++                android:fadingEdge="horizontal|vertical"
++                android:onClick="ShowLesson"
++                android:paddingBottom="15dp"
++                android:paddingStart="10dp"
++                android:paddingTop="15dp"
++                android:tag="2"
++                android:text="Wednesday"
++                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++                android:textSize="35sp" />
++
++            <TextView
++                android:id="@+id/ThursdayTextView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_alignLeft="@+id/WednesdayTextView"
++                android:layout_alignStart="@+id/WednesdayTextView"
++                android:layout_below="@+id/WednesdayTextView"
++                android:background="@android:color/holo_orange_light"
++                android:fadingEdge="horizontal|vertical"
++                android:onClick="ShowLesson"
++                android:paddingBottom="15dp"
++                android:paddingStart="10dp"
++                android:paddingTop="15dp"
++                android:tag="3"
++                android:text="Thursday"
++                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++                android:textSize="35sp" />
++
++            <TextView
++                android:id="@+id/FridayTextView"
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:layout_below="@+id/ThursdayTextView"
++                android:layout_centerHorizontal="true"
++                android:background="@android:color/holo_purple"
++                android:fadingEdge="horizontal|vertical"
++                android:onClick="ShowLesson"
++                android:paddingBottom="15dp"
++                android:paddingStart="10dp"
++                android:paddingTop="15dp"
++                android:tag="4"
++                android:text="Friday"
++                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
++                android:textSize="35sp" />
++
++        </LinearLayout>
+     </RelativeLayout>
+ </android.support.constraint.ConstraintLayout>
